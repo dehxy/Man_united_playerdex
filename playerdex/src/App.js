@@ -12,8 +12,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Manchester United Playerdex</h1>
-      <div className="player-list">
+      <header className="App-header">
+        <h1>Manchester United Playerdex</h1>
+      </header>
+      <div className="player-grid">
         {players.map((player) => (
           <PlayerCard key={player.id} player={player} />
         ))}

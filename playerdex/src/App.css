@@ -1,24 +1,22 @@
-.player-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  width: 250px;
+body {
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.player-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+.App-header {
+  background-color: #da291c;
+  padding: 20px;
+  color: white;
+  border-bottom: 5px solid #000000;
 }
 
-.player-card h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.player-details {
-  text-align: left;
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
